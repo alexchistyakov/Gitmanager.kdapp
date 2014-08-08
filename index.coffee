@@ -1,18 +1,7 @@
-class GitManagerMainView extends KDView
-
-  constructor:(options = {}, data)->
-    options.cssClass = 'GitManager main-view'
-    super options, data
-
-  viewAppended:->
-    @addSubView new KDView
-      partial  : "Welcome to Git Manager app!"
-      cssClass : "welcome-view"
-
 class GitManagerController extends AppController
 
   constructor:(options = {}, data)->
-    options.view    = new GitManagerMainView
+    options.view    = new GitManagerMenuView
     options.appInfo =
       name : "Git Manager"
       type : "application"
@@ -23,7 +12,7 @@ do ->
 
   # In live mode you can add your App view to window's appView
   if appView?
-    view = new GitManagerMainView
+    view = new GitManagerMenuView
     appView.addSubView view
 
   else

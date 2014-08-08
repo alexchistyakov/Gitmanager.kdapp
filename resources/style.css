@@ -1,19 +1,43 @@
+html{
+  min-height:100%;
+}
 .GitManager.main-view {
   background: white;
 }
-
-.GitManager .welcome-view {
+.GitManager .container{
+  text-align:center;
+  width:600px;
+  margin:auto;
+}
+.GitManager .container .list{
   background: #eee;
-
-  height: auto;
   width: auto;
   max-width: 300px;
-
   padding:10px;
-  margin: 50px auto;
-
+  margin: auto;
+  position:absolute;
+  top:auto;
+  bottom:auto;
+  left:0;
+  right:0;
+  overflow:hidden;
+  height:1000px;
   border: 1px solid #ccc;
   border-radius: 4px;
 
   text-align:center;
+}
+.GitManager .container .header{
+  text-align:left;
+}
+.GitManager .container .logo {
+  position: relative;
+  margin-top: 20px;
+}
+.GitManager .container .list-item{
+  margin: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.GitManager .container .list-item .list-footer{
+  border-bottom: 0px;
 }

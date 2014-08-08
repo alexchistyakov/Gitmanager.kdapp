@@ -14,7 +14,9 @@
     "blocks": {
       "app": {
         "files": [
-          "./index.coffee"
+          "./index.coffee",
+          "./views/index.coffee",
+          "./views/appview.coffee"
         ]
       }
     },
